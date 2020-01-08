@@ -1,0 +1,29 @@
+﻿  main.cpp
+C:\Users\aykha\Desktop\PN_EPTweek6\main\main\CNodeDynamic.cpp(6,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\aykha\Desktop\PN_EPTweek6\main\main\CNodeDynamic.cpp(5): message : while compiling class template member function 'CNodeDynamic<T>::~CNodeDynamic(void)'
+          with
+          [
+              T=std::string
+          ]
+C:\Users\aykha\Desktop\PN_EPTweek6\main\main\main.cpp(160): message : see reference to function template instantiation 'CNodeDynamic<T>::~CNodeDynamic(void)' being compiled
+          with
+          [
+              T=std::string
+          ]
+C:\Users\aykha\Desktop\PN_EPTweek6\main\main\main.cpp(23): message : see reference to class template instantiation 'CNodeDynamic<T>' being compiled
+          with
+          [
+              T=std::string
+          ]
+C:\Users\aykha\Desktop\PN_EPTweek6\main\main\CNodeDynamic.cpp(26,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\aykha\Desktop\PN_EPTweek6\main\main\CNodeDynamic.cpp(25): message : while compiling class template member function 'void CNodeDynamic<T>::vPrintAllBelow(void)'
+          with
+          [
+              T=std::string
+          ]
+C:\Users\aykha\Desktop\PN_EPTweek6\main\main\main.cpp(33): message : see reference to function template instantiation 'void CNodeDynamic<T>::vPrintAllBelow(void)' being compiled
+          with
+          [
+              T=std::string
+          ]
+  main.vcxproj -> C:\Users\aykha\Desktop\PN_EPTweek6\main\Debug\main.exe
