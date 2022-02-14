@@ -19,7 +19,11 @@ int main()
 {
     int arr[]{ 1, 2, 3, 4, 5, 6, 7};
 
-    cout << binarySearch(arr, 7, 0, sizeof(arr) / sizeof(arr[0])-1) << endl;
+    int a;
+
+    cin >> a;
+
+    cout << binarySearch(arr, a, 0, sizeof(arr) / sizeof(arr[0])-1) << endl;
 
     return 0;
 }
