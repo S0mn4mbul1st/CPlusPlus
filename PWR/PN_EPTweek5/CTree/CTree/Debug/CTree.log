@@ -1,0 +1,5 @@
+﻿  CTreeDynamic.cpp
+c:\users\s0mn4mbul1st\desktop\pn_eptweek5\ctree\ctree\ctreedynamic.cpp(49): warning C4018: '<': signed/unsigned mismatch
+c:\users\s0mn4mbul1st\desktop\pn_eptweek5\ctree\ctree\ctreedynamic.cpp(115): warning C4018: '<': signed/unsigned mismatch
+c:\users\s0mn4mbul1st\desktop\pn_eptweek5\ctree\ctree\ctreedynamic.cpp(124): warning C4018: '<': signed/unsigned mismatch
+  CTree.vcxproj -> C:\Users\S0mn4mbul1st\Desktop\PN_EPTweek5\CTree\Debug\CTree.exe

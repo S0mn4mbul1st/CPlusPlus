@@ -1,8 +1,0 @@
-﻿  pch.cpp
-  CTree.cpp
-  CTreeDynamic.cpp
-C:\Users\aykha\Desktop\PN_EPTweek5\CTree\CTree\CTreeDynamic.cpp(142,26): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  CTreeStatic.cpp
-C:\Users\aykha\Desktop\PN_EPTweek5\CTree\CTree\CTreeStatic.cpp(74,26): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  Generating Code...
-  CTree.vcxproj -> C:\Users\aykha\Desktop\PN_EPTweek5\CTree\x64\Debug\CTree.exe
