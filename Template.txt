@@ -21,6 +21,9 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The code is written by Aykhan Imanov
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*
+
+*/
 
 #include <bits/stdc++.h>
 
@@ -40,3 +43,11 @@ const int INF = 1<<29;
 
 using namespace std;
 
+
+
+
+int main(){
+
+
+    return 0;
+}

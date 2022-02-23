@@ -28,3 +28,84 @@ Input: secret = "hamada", wordlist = ["hamada","khaled"], numguesses = 10
 Output: You guessed the secret word correctly.
 */
 
+/*
+Solution 4: Count the Occurrence of Characters
+In the previous solution, we compaired each two words.
+This make the complexity O(N^2) for each turn.
+
+But actually we don't have to do that.
+We just need to count the occurrence for each character on each position.
+
+If we can guess the word that not in the wordlist,
+we can guess the word based on the most frequent character on the position.
+
+Here we have to guess a word from the list,
+we still can calculate a score of similarity for each word,
+and guess the word with highest score.
+
+Time complexity O(N)
+Space complexity O(N)
+*/
+
+#include <bits/stdc++.h>
+
+#define FOR(i,a,b)       for(int i=a; i<b; i++)
+#define NFOR(i,a,b)      for(int i=(a-1); i>=(b); i--)
+#define ll               long long int
+#define ld               long long double
+#define f                first
+#define s                second
+#define pb               push_back
+#define mp               make_pair
+#define max(x,y)         (x>y)?x:y
+#define min(x,y)         (x<y)?x:y
+
+
+const int INF = 1<<29;
+
+using namespace std;
+
+class Solution {
+public:
+    int match(string a, string b) {
+        int matches = 0;
+        for (int i = 0; i < a.length(); ++i)
+            if (a[i] == b[i])
+                matches ++;
+        return matches;
+    }
+    
+      void findSecretWord(vector<string>& wordlist, Master& master) {
+        int count[6][26], x = 0, best;
+        for (int t = 0; t < 10 && x < 6; ++t) {
+            memset(count, 0, 156 * sizeof(int));
+            for (string w : wordlist)
+                for (int i = 0; i < 6; ++i)
+                    count[i][w[i] - 'a']++;
+            best = 0;
+            string guess = wordlist[0];
+            for (string w: wordlist) {
+                int score = 0;
+                for (int i = 0; i < 6; ++i)
+                    score += count[i][w[i] - 'a'];
+                if (score > best) {
+                    guess = w;
+                    best = score;
+                }
+            }
+            x = master.guess(guess);
+            vector<string> wordlist2;
+            for (string w : wordlist)
+                if (match(guess, w) == x)
+                    wordlist2.push_back(w);
+            wordlist = wordlist2;
+        }
+    }
+};
+
+
+int main(){
+
+
+    return 0;
+}
